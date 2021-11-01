@@ -1,23 +1,17 @@
-import logo from './logo.svg';
 import './App.css';
+// import 'antd/dist/antd.css';
+import './assets/css/global_layout.scss';
+import './assets/css/global_style.scss';
+import './assets/css/global_variable.scss';
+import './assets/css/text_style_global.scss';
+
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {/* <Button type={'primary'}>button</Button> */}
+        {/* <Route path="/login" component={Login_Page} ></Route>  */}
     </div>
   );
 }

@@ -1,0 +1,145 @@
+@import './global_variable';
+
+:root {
+    --orange: #FF9F1D;
+    --shadow-gray:#dee2e6;
+    --blue:#1b86ff;
+    --gray: #b0b0b0;
+    --lgray:#F7F7F7;
+    --black: #000;
+    --red:#f84c40;
+}
+
+/* 字体尺寸 */
+.text-size-blg {
+    font-size: 18px;
+    font-family: PingFangSC-Medium, PingFang SC;
+}
+.text-size-lg {
+    font-size: 16px;
+    font-family: PingFangSC-Medium, PingFang SC;
+}
+
+.text-size-md {
+    font-size: 14px;
+    font-family: PingFangSC-Medium, PingFang SC;
+}
+
+.text-size-sm {
+    font-size: 12px;
+    font-family: PingFangSC-Medium, PingFang SC;
+}
+
+/* 字体颜色 */
+.text-color-blue {
+    color: #1b86ff;
+    font-family: PingFangSC-Medium, PingFang SC;
+    font-weight: 500;
+}
+
+.text-color-black {
+    color: #383838;
+    font-family: PingFangSC-Medium, PingFang SC;
+    font-weight: 500;
+}
+
+.text-color-gray {
+    color: #575961;
+    font-family: PingFangSC-Medium, PingFang SC;
+    font-weight: 500;
+}
+
+.text-color-lgray {
+    color: #b0b0b0;
+    font-family: PingFangSC-Medium, PingFang SC;
+    font-weight: 500;
+}
+
+.text-color-orange {
+    color: var(--orange);
+    font-family: PingFangSC-Medium, PingFang SC;
+    font-weight: 500;
+}
+
+.text-color-dorange {
+    color: $d-orange;
+    font-family: PingFangSC-Medium, PingFang SC;
+    font-weight: 500;
+}
+
+.text-color-ddorange {
+    color: $dd-orange;
+    font-family: PingFangSC-Medium, PingFang SC;
+    font-weight: 500;
+}
+
+
+.text-color-red {
+    color: var(--red);
+    font-family: PingFangSC-Medium, PingFang SC;
+    font-weight: 500;
+}
+
+.text-color-white {
+    color: #ffffff;
+    font-family: PingFangSC-Medium, PingFang SC;
+    font-weight: 500;
+}
+.text-color-green{
+    color:#00BC70;
+    font-family: PingFangSC-Medium, PingFang SC;
+    font-weight: 500;
+}
+
+
+/* 字体加粗 */
+.text-bold-sm{
+    font-weight: 400;
+    font-family: PingFangSC-Medium, PingFang SC;
+}
+.text-bold-md{
+    font-weight: 500;
+    font-family: PingFangSC-Medium, PingFang SC;
+}
+.text-bold-lg{
+    font-weight: 600;
+    font-family: PingFangSC-Medium, PingFang SC;
+}
+
+
+/* 字体样式 */
+.text-style {
+    font-family: PingFangSC-Medium, PingFang SC;
+}
+
+/* 字体通用样式 */
+
+.text-select{ /*提供选项时，字体大小，黑色并且颜色深度正常*/
+    color: #575961;
+    font-size: 14px;
+    font-weight: 500;
+    font-family: PingFangSC-Medium, PingFang SC;
+}
+.text-title{/*作为标题时，字体偏大，黑色且颜色较深样式*/
+    color: #575961;
+    font-size: 16px;
+    font-weight: 600;
+    font-family: PingFangSC-Medium, PingFang SC;
+}
+.text-ellipsis{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+
+/* line hight */
+.line-hight-sm{
+    line-height: 1em;
+}
+.line-hight-md{
+    line-height: 2em;
+}
+.line-hight-lg{
+    line-height: 3em;
+}

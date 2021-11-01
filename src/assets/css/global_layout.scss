@@ -1,0 +1,258 @@
+/* 弹性布局 */
+.display-flex{
+    display: flex;
+}
+// 换行
+.display-flex-wrap{
+    display: flex;
+    flex-wrap: wrap;
+}
+// 垂直方向轴
+.display-flex-column{
+    @extend .display-flex;
+    flex-direction: column;
+}
+
+/* 垂直居中 */
+.display-flex-vcenter{
+    display: flex;
+    align-items: center;
+}
+
+/* 水平居中 */
+.display-flex-center{
+    display: flex;
+    justify-content: center;
+}
+
+/* 水平靠起点 */
+.display-flex-start{
+    display: flex;
+    justify-content: flex-start;
+}
+
+/* 水平靠终点 */
+.display-flex-end{
+    display: flex;
+    justify-content: flex-end;
+}
+.display-flex-vend{
+    display: flex;
+    align-items: flex-end;
+}
+
+.display-flex-between{
+    display: flex;
+    justify-content: space-between;
+}
+
+.display-flex-evenly{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+/* margin */
+.margin-left-xs{
+    margin-left: 0.5em;
+}
+.margin-left-sm{
+    margin-left: 1em;
+}
+.margin-left-md{
+    margin-left: 1.5em;
+}
+.margin-right-xs{
+    margin-right: 0.5em;
+}
+.margin-right-sm{
+    margin-right: 1em;
+}
+.margin-right-lg{
+    margin-right: 2em;
+}
+.margin-top-xs{
+    margin-top: .5em;
+}
+.margin-top-sm{
+    margin-top: 1em;
+}
+.margin-top-md{
+    margin-top: 1.5em;
+}
+.margin-top-lg{
+    margin-top: 2em;
+}
+.margin-bot-xs{
+    margin-bottom: .5em;
+}
+.margin-bot-sm{
+    margin-bottom: 1em;
+}
+.margin-bot-md{
+    margin-bottom: 1.5em;
+}
+.margin-bot-lg{
+    margin-bottom: 2em;
+}
+.margin-hi-xs{
+    margin-left:0.5em;
+    margin-right: 0.5em;
+}
+.margin-hi-sm{
+    margin-left:1em;
+    margin-right: 1em;
+}
+
+.margin-vi-xs{
+    margin-top:.5em;
+    margin-bottom: .5em;
+}
+.margin-vi-sm{
+    margin-top:1em;
+    margin-bottom: 1em;
+}
+.margin-vi-md{
+    margin-top:1.5em;
+    margin-bottom: 1.5em;
+}
+.margin-vi-lg{
+    margin-top:2em;
+    margin-bottom: 2em;
+}
+
+/* margin px */
+.margin-hi-md-px{
+    margin-left:16px;
+    margin-right: 16px;
+}
+
+/* padding */
+.pad-xs{
+    padding:0.5em;
+}
+
+.pad-sm{
+    padding: 1em;
+}
+
+.pad-hi-xs{
+    padding-left: .5em;
+    padding-right: .5em;
+}
+
+.pad-hi-sm{
+    padding-left: 1em;
+    padding-right: 1em;
+}
+.pad-hi-md{
+    padding-left: 2em;
+    padding-right: 2em;
+}
+.pad-vi-xs{
+    padding-top: .5em;
+    padding-bottom: .5em;
+
+}
+.pad-vi-sm{
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+.pad-vi-md{
+    padding-top: 1.5em;
+    padding-bottom: 1.5em;
+}
+.pad-vi-ld{
+    padding-top: 2em;
+    padding-bottom: 2em;
+}
+
+
+.pad-left-xs{
+    padding-left: .5em;
+}
+
+.pad-left-sm{
+    padding-left: 1em;
+}
+.pad-left-md{
+    padding-left: 1.5em;
+}
+.pad-left-lg{
+    padding-left: 2em;
+}
+
+.pad-right-xs{
+    padding-right: .5em;
+}
+.pad-right-sm{
+    padding-right: 1em;
+}
+.pad-right-md{
+    padding-right: 1.5em;
+}
+.pad-right-lg{
+    padding-right: 2em;
+}
+.pad-right-blg{
+    padding-right: 2.5em;
+}
+
+.pad-top-xs{
+    padding-top: .5em;
+}
+.pad-top-sm{
+    padding-top: 1em;
+}
+.pad-top-md{
+    padding-top: 1.5em;
+}
+.pad-top-lg{
+    padding-top: 2em;
+}
+
+@mixin pad-bot($pad:1em) {
+    padding-bottom: $pad;
+}
+
+.pad-bot-xs{
+    @include pad-bot(.5em);
+}
+.pad-bot-sm{
+    @include pad-bot(1em);
+}
+
+.pad-bot-md{
+    @include pad-bot(1.5em);
+}
+.pad-bot-lg{
+    @include pad-bot(2em);
+}
+
+.pad-bot-blg{
+    @include pad-bot(3em);
+}
+
+
+
+/* display==none */
+.display-none{
+    display: none;
+}
+/* text-align */
+.text-center{
+    text-align: center;
+}
+
+.text-right{
+    text-align: right;
+}
+
+.text-left{
+    text-align: left;
+}
+
+.sticky-top{
+    position: sticky;
+    top:0;
+}
+
