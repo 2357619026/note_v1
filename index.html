@@ -11,95 +11,9 @@
 <body>
 
 
-    责任链模式; 1. orderType 1.1 500 定金 -- 100 优惠卷; 1.2 200 定金 -- 50 优惠卷; 1.3 无优惠; 2. pay 是否支付定金; 3. stock 库存;
+    <p>Hello Zora</p>
     <script>
-        // var order = function(orderType, pay, stock) {
-        //     if (orderType === 1) { //500 定金
-        //         if (pay === true) {
-        //             console.log('500 预购成功, 得到100优惠卷')
-        //         } else {
-        //             if (stock > 0) {
-        //                 console.log('普通购买, 无优惠卷');
-        //             } else {
-        //                 console.log('库存不足, 无法购买');
-        //             }
-        //         }
-
-        //     } else if (orderType === 2) { // 200元定金
-        //         if (pay === true) {
-        //             console.log('200 预购成功, 得到50优惠卷')
-        //         } else {
-        //             if (stock > 0) {
-        //                 console.log('普通购买, 无优惠卷');
-        //             } else {
-        //                 console.log('库存不足, 无法购买');
-        //             }
-        //         }
-
-        //     } else if (orderType === 3) {
-        //         if (stock > 0) {
-        //             console.log('普通购买, 无优惠卷');
-        //         } else {
-        //             console.log('库存不足, 无法购买');
-        //         }
-        //     }
-        // };
-
-
-        function order500(orderType, pay, stock) {
-            if (orderType === 1 && pay === true) { //500 定金
-                console.log('500 预购成功, 得到100优惠卷')
-            } else {
-                //order200(orderType, pay, stock)
-                return 'next';
-            }
-        }
-
-        function order200(orderType, pay, stock) {
-            if (orderType === 2 && pay === true) { // 200元定金
-                console.log('200 预购成功, 得到50优惠卷')
-            } else {
-                // orderNormal(orderType, pay, stock)
-                return 'next';
-            }
-        }
-
-        function orderNormal(orderType, pay, stock) {
-            if (stock > 0) {
-                console.log('普通购买, 无优惠卷');
-            } else {
-                console.log('库存不足, 无法购买');
-            }
-        }
-
-        // 面向对象的链式调用
-        function Chain(fn) {
-            this.fn = fn;
-            this.next = null;
-        }
-
-        Chain.prototype.setNext = function (next_fn) {
-            this.next = next_fn;
-        }
-
-        Chain.prototype.start = function () {
-            var res = this.fn.apply(this, arguments);
-            if (res === 'next') {
-                return this.next.start.apply(this, arguments)
-            }
-        }
-
-        var order500Chain = new Chain(order500);
-        var order200Chain = new Chain(order200);
-
-        order500Chain.setNext(order200Chain);
-        order200Chain.setNext(orderNormal);
-
-        order500Chain.start(1, true, 200);
-        order500Chain.start(2, true, 200);
-        order500Chain.start(3, true, 200);
-        order500Chain.start(1, false, 0);
-
+        console.log("%c ", "padding:500px 500px;background:url('https://2357619026.github.io/note_v1/avator.jpg') no-repeat;");
     </script>
 
 </body>
