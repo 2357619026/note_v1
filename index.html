@@ -11,7 +11,7 @@
     .grant-text {
         margin: auto;
         line-height: 80vh;
-        font-size: 33px;
+        font-size: 2.5em;
         font-weight: 700;
         text-align: center;
     }
@@ -22,6 +22,7 @@
 
     <div class="grant-text">Hello Zora, Nice to meet you. 😁</div>
     <script>
+        document.querySelector('html').style.fontSize = document.body.clientWidth / 65.5 + 'px';
         console.log("%c ", "padding:500px 500px;background:url('https://zora.cool/img/weixin_avator.jpg') no-repeat;");
     </script>
 
