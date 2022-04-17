@@ -5,26 +5,43 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Hi,Zora</title>
 </head>
 <style>
     .grant-text {
         margin: auto;
-        line-height: 80vh;
-        font-size: 2.5em;
+        /* line-height: 80vh; */
+        margin-top: 35vh;
+        font-size: 3.5rem;
         font-weight: 700;
         text-align: center;
+    }
+
+    .is-br {
+        display: none;
+        height: 0px;
+    }
+</style>
+<style>
+    @media (max-width: 450px) {
+        .is-br {
+            display: block;
+
+        }
+
+        .grant-head {
+            font-size: 6rem;
+        }
     }
 </style>
 
 <body>
-
-
-    <div class="grant-text">Hello Zora, Nice to meet you. 😁</div>
-    <script>
-        document.querySelector('html').style.fontSize = document.body.clientWidth / 65.5 + 'px';
-        console.log("%c ", "padding:500px 500px;background:url('https://zora.cool/img/weixin_avator.jpg') no-repeat;");
-    </script>
+    <div class="grant-text">
+        <span class="grant-head">Hi Zora,</span>
+        <div class="is-br"></div>
+        <span class="grant-tail">Nice to meet you. 😁</span>
+    </div>
+    <script src="./js/index.js"></script>
 
 </body>
 
