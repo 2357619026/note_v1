@@ -25,7 +25,7 @@
             bindEvent();
         }
 
-        init()
+        init();
     }
 )(document)
 
