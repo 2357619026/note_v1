@@ -1,0 +1,10 @@
+@media (max-width: 450px) {
+    .is-br {
+        display: block;
+
+    }
+
+    .grant-head {
+        font-size: 6rem;
+    }
+}
