@@ -36,7 +36,7 @@
         var grant_head = grant_text.querySelector(".grant-head");
         if (is_night) {
             grant_text.style.color = 'white';
-            grant_tail.innerHTML = 'Tonight the moon is beautiful. 🙈';
+            grant_tail.innerHTML = 'Tonight the moon is beautiful. 🌕';
             grant_head.style.display = 'none'
         } else {
             grant_text.style.color = 'black';
