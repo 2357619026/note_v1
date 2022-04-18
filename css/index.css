@@ -1,0 +1,17 @@
+.grant-text {
+    margin: auto;
+    /* line-height: 80vh; */
+    margin-top: 35vh;
+    font-size: 3.5rem;
+    font-weight: 700;
+    text-align: center;
+}
+
+.grant-text::after {
+    background-color: gray;
+}
+
+.is-br {
+    display: none;
+    height: 0px;
+}
