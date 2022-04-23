@@ -1,0 +1,56 @@
+.menu-icon {
+    height: 40px;
+    width: 40px;
+    background-image: url(../img/svg/menu.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    top: 3%;
+    left: 3%;
+    transition: all 0.1s;
+
+}
+
+.menu-panel {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    background: rgba(0, 0, 0, 0.794);
+    padding-top: 10vh;
+    overflow: hidden;
+    transition: .5s all ease;
+    /* display: none; */
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    /* flex-wrap: wrap;
+    align-content: center; */
+}
+
+.panel-item {
+    width: 50vw;
+    font-size: 2rem;
+    text-align: center;
+    margin: 5vh auto;
+    line-height: 3rem;
+    border: 1px solid transparent;
+    color: white;
+}
+
+.panel-item:hover {
+    background: gray;
+    border-color: white;
+    border-radius: 20px;
+
+}
+
+.panel-item a {
+    display: block;
+    text-decoration: none;
+    font-size: inherit;
+    color: inherit;
+    cursor: pointer;
+}

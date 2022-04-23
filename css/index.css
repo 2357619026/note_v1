@@ -1,3 +1,5 @@
+@import './menu_panel.css';
+
 :root {
     --mask-color: 'transparent';
 }
@@ -15,6 +17,7 @@ body {
     background-size: cover;
     position: relative;
     z-index: 0;
+    overflow: hidden;
 }
 
 .grant-text {
@@ -25,6 +28,7 @@ body {
     font-weight: 700;
     text-align: center;
 }
+
 
 .theme-icon {
     height: 40px;
