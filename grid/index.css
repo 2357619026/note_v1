@@ -1,3 +1,5 @@
+@import './css/text.css';
+
 img {
     height: 100%;
     width: 100%;
@@ -9,7 +11,7 @@ img {
 
 div {
     border-radius: 5px;
-    box-shadow: 0px 0px 3px 3px lightgray;
+    box-shadow: 0px 0px 5px 3px lightgray;
 }
 
 h2 {
@@ -18,28 +20,25 @@ h2 {
 
 .main {
     display: grid;
-    grid-template-columns: 2vw repeat(11, 7.5vmax);
+    grid-template-columns: 2vw repeat(11, 6.5vmax);
     grid-template-rows: repeat(12, 7.5vmax);
-    gap: 1vw;
+    gap: 2vw;
     padding-right: .5rem;
+    overflow: auto;
+}
+
+.background-color {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 105%;
+    background: linear-gradient(45deg, #ff9a9d8e, #fad0c486);
+    z-index: -1;
 }
 
 .img {
     overflow: hidden;
-    border: .5rem solid snow;
-}
-
-.text0 {
-    grid-row: 1 / span 1;
-    grid-column: 3 / span 9;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.text {
-    padding: .5rem 1rem;
-    overflow-y: auto;
 }
 
 .img1 {
@@ -65,7 +64,7 @@ h2 {
 
 .img4 {
     grid-row: 2 / span 3;
-    grid-column: -5 / span 2;
+    grid-column: -3 / span 2;
 }
 
 .img5 {
@@ -120,26 +119,6 @@ h2 {
 
 .video1 {
     grid-row: 8 / span 4;
-    grid-column: -6 / span 3;
+    grid-column: -4 / span 3;
 
-}
-
-.text1 {
-    grid-row: 6 /span 2;
-    grid-column: 2 / span 2;
-}
-
-.text2 {
-    grid-row: 8 / span 2;
-    grid-column: 2 / span 2;
-}
-
-.text3 {
-    grid-row: 2 / span 2;
-    grid-column: 5 / span 2;
-}
-
-.text4 {
-    grid-row: 7 / span 1;
-    grid-column: -5 / span 4;
 }

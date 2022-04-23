@@ -1,13 +1,10 @@
 
 (function (doc) {
-    // var theme_icon = doc.querySelector('.theme-icon');
     var theme_icon = $('.theme-icon');
     theme_icon.mouseover = function () {
-        // console.log('mouseover: ', this);
         this.style.transform = 'scale(1.2)';
     }
     theme_icon.mouseout = function () {
-        // console.log('mouseover: ', this);
         this.style.transform = 'scale(1)';
     }
     const clickCallback = function () {
