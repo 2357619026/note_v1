@@ -55,7 +55,7 @@
             // ctx.strokeStyle = 'yellow';
             ctx.beginPath();
             ctx.fillStyle = 'white'
-            ctx.arc(width, height, width - 30, 0, 2 * Math.PI, false);
+            ctx.arc(width, height, width - 20, 0, 2 * Math.PI, false);
             ctx.fill();
 
             ctx.restore();
@@ -92,11 +92,11 @@
         Clock.prototype.drawNumber = function () {
             var ctx = this.context;
             var numArray = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12];
-            var r = this.canvas.width / 2 - 70;
+            var r = this.canvas.width / 2 - 45;
 
             ctx.save();
             ctx.beginPath();
-            ctx.font = '40px Arial';
+            ctx.font = '2rem Arial';
             // ctx.fillStyle = 'yellow';
             ctx.lineWidth = 10;
             ctx.textAlign = 'center';
