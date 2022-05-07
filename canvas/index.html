@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0"
+		/>
+		<script src="./js/resize.js"></script>
+		<title>ios 时钟</title>
+	</head>
+	<style>
+		body {
+			margin: 0;
+			padding: 0;
+			width: 100%;
+		}
+		.clock {
+			width: 500px;
+			height: 500px;
+			background: black;
+			border-radius: 60px;
+			margin: auto;
+			margin-top: 40px;
+		}
+		.commit {
+			font-size: 2rem;
+			margin-top: 4rem;
+			text-align: center;
+		}
+	</style>
+	<body>
+		<div class="clock">
+			<canvas width="500" height="500"></canvas>
+		</div>
+		<div class="commit">这是一个仿ios的Clock，像不像 😄</div>
+		<script src="./index.js"></script>
+		<script>
+			var canvas = document.querySelector("canvas"),
+				context = canvas.getContext("2d");
+			console.log(canvas.height);
+
+			var clock = new Clock(context);
+			clock.init();
+		</script>
+	</body>
+</html>
