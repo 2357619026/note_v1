@@ -1,3 +1,5 @@
+@import './menu_panel.css';
+
 :root {
     --mask-color: 'transparent';
 }
@@ -15,6 +17,7 @@ body {
     background-size: cover;
     position: relative;
     z-index: 0;
+    overflow: hidden;
 }
 
 .grant-text {
@@ -25,6 +28,7 @@ body {
     font-weight: 700;
     text-align: center;
 }
+
 
 .theme-icon {
     height: 40px;
@@ -55,4 +59,14 @@ body {
 .is-br {
     display: none;
     height: 0px;
+}
+
+.beian{
+    position: fixed;
+    bottom: 5vh;
+    left: 50%;
+    transform: translateX(-50%);
+    font-weight: 600;
+    color: black;
+    text-decoration: none;
 }
