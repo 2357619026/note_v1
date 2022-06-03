@@ -1,0 +1,30 @@
+.myZora {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  transition: all 0.2s;
+  position: fixed;
+}
+
+
+
+/* #img_0 {
+  z-index: 10;
+  transition: all 0.05s;
+  position: fixed;
+  background: url('../img/my_avator.jpg') center/cover no-repeat;
+} */
+
+.zenosTitle {
+  z-index: 10;
+  transition: all 0.05s;
+  position: fixed;
+  background: url('./img/my_avator.jpg') center/cover no-repeat;
+}
+
+.zoraTitle {
+  z-index: 10;
+  transition: all 0.05s;
+  position: fixed;
+  background: url('../img/weixin_avator.jpg') center/cover no-repeat;
+}

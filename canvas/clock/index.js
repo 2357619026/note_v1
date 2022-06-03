@@ -28,6 +28,22 @@
                 () =>
                     window.requestAnimationFrame(this.draw.bind(this)),
                 1 / 60);
+            // this.draw();
+            // 转化成base64编码字符串
+            // 将canvas转变成图片，或者下载图片都是可以的。只要拿到了base64编码就好说了
+            // var data = this.canvas.toDataURL('image/jpeg', 1);
+            // var img = new Image();
+            // img.onload = function () {
+            //     var commit = document.querySelector('.commit');
+            //     console.log(commit);
+            //     commit.appendChild(img);
+            // }
+            // img.src = data;
+            // a标签可以用来下载，也可以用来跳转
+            // var aLink = document.createElement('a');
+            // aLink.href = data;
+            // aLink.download = 'download img'
+            // aLink.click();
         }
 
         //clock draw
@@ -190,8 +206,6 @@
         Clock.prototype.drawSecondsPoint = function (seconds) {
             var ctx = this.context;
             var millSeconds = this.date.millSeconds;
-            // console.log(this.date.millSeconds);
-            // console.log(this.date.seconds);
             ctx.save();
             ctx.beginPath();
 

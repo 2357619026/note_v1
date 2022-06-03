@@ -3,6 +3,7 @@
     const menuPanel = $('.menu-panel');
     let is_open = false;
     menu.click(() => {
+        console.log('click open menu');
         is_open = !is_open;
         const menuIcon = $('.menu-icon');
         if (is_open) {
